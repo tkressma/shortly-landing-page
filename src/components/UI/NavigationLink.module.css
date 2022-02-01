@@ -1,0 +1,23 @@
+.link {
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}
+
+.link:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
+}
+
+@media (min-width: 768px) {
+    .link {
+        color: #9E9AA8;
+    }
+
+    .link:hover {
+        color: #34313D;
+        text-decoration: none;
+    }
+}

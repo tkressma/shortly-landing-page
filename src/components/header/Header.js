@@ -1,13 +1,13 @@
 import React from "react";
 import Container from "../UI/Container";
 import styles from "./Header.module.css";
-import Nav from "./Nav";
+import Navbar from "./Navbar";
 
 function Header(props) {
   return (
     <header className={styles.header}>
       <Container>
-        <Nav />
+        <Navbar />
       </Container>
     </header>
   );
