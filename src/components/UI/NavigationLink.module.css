@@ -1,23 +1,24 @@
 .link {
-    text-decoration: none;
-    font-weight: 700;
-    color: white;
-    cursor: pointer;
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 .link:hover {
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    text-decoration-thickness: 2px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
 }
 
 @media (min-width: 768px) {
-    .link {
-        color: #9E9AA8;
-    }
+  .link {
+    color: #9e9aa8;
+  }
 
-    .link:hover {
-        color: #34313D;
-        text-decoration: none;
-    }
+  .link:hover {
+    color: #34313d;
+    text-decoration: none;
+  }
 }
