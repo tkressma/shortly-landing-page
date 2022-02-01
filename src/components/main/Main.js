@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "../UI/Container";
 import Shortener from "./Shortener";
+import styles from "./Main.module.css";
 function Main(props) {
   return (
     <main>
