@@ -1,0 +1,17 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    align-items: center;
+}
+
+.hero__article {
+    flex: 1 1 50%;
+    order: 2;
+}
+
+.hero__img {
+    border: 2px solid blue;
+    flex: 1 1 50%;
+    order: 1;
+}
