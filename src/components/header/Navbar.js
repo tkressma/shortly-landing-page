@@ -3,12 +3,14 @@ import styles from "./Navbar.module.css";
 import logo from "../../assets/logo.svg";
 import NavMenu from "./NavMenu";
 import { Squash as Hamburger } from 'hamburger-react'
+import { useMediaQuery } from 'react-responsive'
 
 function Navbar() {
-  const [menuStatus, setmenuStatus] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
 
   const toggleMenu = () => {
-    setmenuStatus(!menuStatus);
+    setMenuOpen(!menuOpen);
   }
 
   return (
@@ -17,13 +19,10 @@ function Navbar() {
         <img src={logo} alt="Shortly Logo" />
       </a>
 
-      <div className={styles.mobile}>
-        <Hamburger size="30" color="#9E9AA8" label="Open navigation menu" hideOutline={false}
-          onToggle={toggleMenu}
-        />
-      </div>
+        {isMobile && <Hamburger className={styles.mobile} size="30" color="#9E9AA8" label="Open navigation menu" hideOutline={false}
+          onToggle={toggleMenu}/>}
       
-      <NavMenu isOpen={menuStatus} />
+      <NavMenu isOpen={menuOpen} />
     </nav>
   );
 }

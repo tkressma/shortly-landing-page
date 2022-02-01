@@ -8,12 +8,7 @@
 
 .logo {
   flex: 0 0 50%;
-}
-
-.mobile {
-  display: flex;
-  justify-content: flex-end;
-  flex: 1 0 50%;
+  margin-right: auto;
 }
 
 @media (min-width: 768px) {
