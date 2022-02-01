@@ -1,4 +1,24 @@
-.menu {
+.navigation {
+  width: 327px;
+  padding: 40px 32px;
+  margin-top: 24px;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: #3A3054;
+  position: relative;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  top: 82px;
+}
+
+.open {
+  visibility: visible;
+  opacity: 100;
+}
+
+  .menu {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,23 +34,6 @@
     flex-shrink: 0.4;
     text-align: center;
     gap: 24px;
-  }
-  
-  .navigation {
-    width: 327px;
-    padding: 40px 32px;
-    margin-top: 24px;
-    font-size: 18px;
-    border-radius: 10px;
-    background-color: #3A3054;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.4s ease-in-out;
-  }
-
-  .open {
-    visibility: visible;
-    opacity: 100;
   }
   
   .menu__option + .menu__option {
@@ -51,6 +54,7 @@
         transition: none;
         opacity: 100;
         visibility: visible;
+        position: static;
       }
     
       .menu {

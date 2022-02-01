@@ -19,9 +19,12 @@ function Navbar() {
         <img src={logo} alt="Shortly Logo" />
       </a>
 
-        {isMobile && <Hamburger className={styles.mobile} size="30" color="#9E9AA8" label="Open navigation menu" hideOutline={false}
-          onToggle={toggleMenu}/>}
-      
+
+        {isMobile && 
+        <Hamburger className={styles.mobile} size="40" distance="sm" color="#9E9AA8" label="Open navigation menu" hideOutline={false}
+          onToggle={toggleMenu}/>
+          }
+
       <NavMenu isOpen={menuOpen} />
     </nav>
   );
