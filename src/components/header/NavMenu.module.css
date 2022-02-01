@@ -11,18 +11,26 @@
   .menu__buttons {
     display: flex;
     flex-direction: column;
+    flex-shrink: 0.4;
     text-align: center;
     gap: 24px;
-    flex-shrink: 0.4;
   }
   
   .navigation {
     width: 327px;
     padding: 40px 32px;
-    border-radius: 10px;
-    font-size: 18px;
-    background-color: #3A3054;
     margin-top: 24px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #3A3054;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .open {
+    visibility: visible;
+    opacity: 100;
   }
   
   .menu__option + .menu__option {
@@ -36,10 +44,13 @@
         justify-content: space-between;
         align-items: center;
         padding: 0;
-        background-color: inherit;
-        border-radius: 0;
-        font-size: 15px;
         margin-top: 0;
+        font-size: 15px;
+        border-radius: 0;
+        background-color: inherit;
+        transition: none;
+        opacity: 100;
+        visibility: visible;
       }
     
       .menu {
@@ -47,8 +58,8 @@
         flex-direction: row;
         justify-content: space-between;
         padding: 0 0 0 4.556%;
-        border-bottom: none;
         margin: 0;
+        border-bottom: none;
       }
     
       .menu__option + .menu__option {

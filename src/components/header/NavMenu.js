@@ -1,10 +1,11 @@
 import styles from "./NavMenu.module.css"
 import NavigationLink from "../UI/NavigationLink"
 import ButtonCTA from "../UI/ButtonCTA";
+import classNames from 'classnames';
 
-function NavMenu() {
+function NavMenu(props) {
     return (
-        <div className={styles.navigation}>
+        <div className={classNames(styles.navigation, props.isOpen && styles.open)}>
         <ul className={styles.menu} role="navigation" aria-label="Main navigation links">
           <li className={styles["menu__option"]}>
              <NavigationLink text="Products"/>
