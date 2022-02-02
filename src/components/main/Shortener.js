@@ -1,16 +1,21 @@
 import React, { useState } from "react";
 import styles from "./Shortener.module.css";
 import Button from "../UI/Button";
+import validator from "validator";
+
 function Shortener(props) {
   const [inputLink, setInputLink] = useState("");
 
   const shortenHandler = (event) => {
     event.preventDefault();
-    const linkData = {
-      inputLink: inputLink,
-      shortLink: inputLink,
-    };
-    props.storeLinkData(linkData);
+    if (validator.isURL(inputLink)) {
+      const linkData = {
+        inputLink: inputLink,
+        shortLink: inputLink,
+      };
+      props.storeLinkData(linkData);
+      setInputLink("");
+    }
   };
 
   const linkChangeHandler = (event) => {
