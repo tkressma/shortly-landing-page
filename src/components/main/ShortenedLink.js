@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./ShortenedLink.module.css";
 import Button from "../UI/Button";
 function ShortenedLink(props) {
+  const [copied, setCopied] = useState(false);
+  const handleCopy = () => {
+    setCopied(true);
+  };
+
   return (
     <li className={styles.link}>
       <a
@@ -19,7 +24,11 @@ function ShortenedLink(props) {
       >
         {props.shortLink}
       </a>
-      <Button text="Copy" />
+      <Button
+        text={`${!copied ? "Copy" : "Copied!"}`}
+        onClick={handleCopy}
+        copied={copied}
+      />
     </li>
   );
 }
