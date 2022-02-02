@@ -8,12 +8,15 @@
 }
 
 .link__input_link {
+  text-decoration: none;
+  color: #34313d;
   padding: 0.5rem 0;
 }
 
 .link__short_link {
-  padding: 0.9rem 0;
+  text-decoration: none;
   color: #2bd0d0;
+  padding: 0.9rem 0;
 }
 
 .link button {
@@ -47,11 +50,11 @@
   }
 
   .link__input_link {
-    text-align: left;
+    flex-basis: 100%;
   }
 
-  .link__shortened_link {
-    text-align: right;
+  .link__short_link {
+    margin-right: 1.5rem;
   }
 
   .link button {

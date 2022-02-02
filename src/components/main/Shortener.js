@@ -8,6 +8,7 @@ function Shortener(props) {
 
   const shortenHandler = (event) => {
     event.preventDefault();
+
     if (validator.isURL(inputLink)) {
       const linkData = {
         inputLink: inputLink,

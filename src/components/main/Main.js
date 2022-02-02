@@ -3,7 +3,7 @@ import Container from "../UI/Container";
 import Shortener from "./Shortener";
 import ShortenedLinkList from "./ShortenedLinkList";
 import styles from "./Main.module.css";
-function Main(props) {
+function Main() {
   const [linkData, setLinkData] = useState([
     {
       inputLink: "https://www.frontendmentor.io",

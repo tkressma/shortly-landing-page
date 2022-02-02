@@ -14,7 +14,11 @@ function Hero() {
         <ButtonCTA text="Get Started" />
       </article>
       <div className={styles["hero__img_container"]}>
-        <img className={styles["hero__img"]} src={illustration} />
+        <img
+          className={styles["hero__img"]}
+          src={illustration}
+          alt="Cartoon figure of someone at their computer desk"
+        />
       </div>
     </section>
   );
