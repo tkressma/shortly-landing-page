@@ -6,7 +6,11 @@ function Shortener(props) {
 
   const shortenHandler = (event) => {
     event.preventDefault();
-    console.log("Shorten link!");
+    const linkData = {
+      inputLink: inputLink,
+      shortLink: inputLink,
+    };
+    props.storeLinkData(linkData);
   };
 
   const linkChangeHandler = (event) => {

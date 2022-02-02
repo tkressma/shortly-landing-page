@@ -4,9 +4,13 @@ import ShortenedLink from "./ShortenedLink";
 const ShortenedLinkList = (props) => {
   return (
     <ul className={styles.links}>
-      <ShortenedLink />
-      <ShortenedLink />
-      <ShortenedLink />
+      {props.linkData.map((data) => (
+        <ShortenedLink
+          key={data.inputLink}
+          inputLink={data.inputLink}
+          shortLink={data.shortLink}
+        />
+      ))}
     </ul>
   );
 };

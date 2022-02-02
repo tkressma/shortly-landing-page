@@ -4,9 +4,9 @@ import Button from "../UI/Button";
 function ShortenedLink(props) {
   return (
     <li className={styles.link}>
-      <p className={styles["link__input_link"]}>http://www.cool.com</p>
+      <p className={styles["link__input_link"]}>{props.inputLink}</p>
       <hr />
-      <p className={styles["link__shortened_link"]}>http://rel.ink/gx09fb</p>
+      <p className={styles["link__short_link"]}>{props.shortLink}</p>
       <Button text="Copy" />
     </li>
   );
