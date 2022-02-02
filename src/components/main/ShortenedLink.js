@@ -1,11 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./ShortenedLink.module.css";
 import Button from "../UI/Button";
 function ShortenedLink(props) {
   const [copied, setCopied] = useState(false);
+
   const handleCopy = () => {
+    navigator.clipboard.writeText(props.shortLink);
     setCopied(true);
   };
+
+  useEffect(() => {
+    if (copied) {
+      setTimeout(() => setCopied(false), 4000);
+    }
+  }, [copied]);
 
   return (
     <li className={styles.link}>
