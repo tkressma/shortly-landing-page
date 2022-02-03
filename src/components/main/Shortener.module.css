@@ -1,12 +1,13 @@
 .shortener {
   height: 160px;
   width: 100%;
+  max-width: 750px;
+  margin: -80px auto 0;
   padding: 24px;
   background: url("../../assets/bg-shorten-mobile.svg"), #3a3054;
   background-repeat: no-repeat;
   background-position: top right;
   border-radius: 10px;
-  margin-top: -80px;
   font-family: inherit;
 }
 
@@ -40,6 +41,7 @@
     height: 168px;
     padding: 52px 64px;
     margin-top: -84px;
+    max-width: none;
   }
 
   .shortener form {
