@@ -21,6 +21,7 @@ function ShortenedLink(props) {
         className={styles["link__input_link"]}
         href={props.inputLink}
         target="_blank"
+        rel="noreferrer"
       >
         {props.inputLink}
       </a>
@@ -29,6 +30,7 @@ function ShortenedLink(props) {
         className={styles["link__short_link"]}
         href={props.shortLink}
         target="_blank"
+        rel="noreferrer"
       >
         {props.shortLink}
       </a>
