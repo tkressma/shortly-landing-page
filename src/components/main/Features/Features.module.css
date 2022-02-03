@@ -2,6 +2,7 @@
   width: 100%;
   margin: 0 auto;
   max-width: 750px;
+  margin-bottom: 5rem;
 }
 
 .features__h2 {
@@ -30,5 +31,6 @@
 @media (min-width: 1000px) {
   .features {
     max-width: none;
+    margin-bottom: 7.5rem;
   }
 }

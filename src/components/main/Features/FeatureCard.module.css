@@ -41,6 +41,14 @@
     text-align: left;
   }
 
+  .feature-card:first-of-type {
+    margin-bottom: 6rem;
+  }
+
+  .feature-card:last-child {
+    margin-top: 11rem;
+  }
+
   .feature-card figure {
     left: 0rem;
     top: 0;
