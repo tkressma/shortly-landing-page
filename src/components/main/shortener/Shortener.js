@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Shortener.module.css";
-import Button from "../UI/Button";
+import Button from "../../UI/Button";
 import validator from "validator";
 
 function Shortener(props) {

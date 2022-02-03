@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./ShortenedLink.module.css";
-import Button from "../UI/Button";
+import Button from "../../UI/Button";
 function ShortenedLink(props) {
   const [copied, setCopied] = useState(false);
 
