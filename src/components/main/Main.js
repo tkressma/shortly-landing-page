@@ -3,6 +3,7 @@ import Container from "../UI/Container";
 import Shortener from "./shortener/Shortener";
 import ShortenedLinkList from "./shortener/ShortenedLinkList";
 import Features from "./features/Features";
+import Boost from "./Boost";
 import styles from "./Main.module.css";
 function Main() {
   const [linkData, setLinkData] = useState([
@@ -24,6 +25,7 @@ function Main() {
         <ShortenedLinkList linkData={linkData} />
         <Features />
       </Container>
+      <Boost />
     </main>
   );
 }
