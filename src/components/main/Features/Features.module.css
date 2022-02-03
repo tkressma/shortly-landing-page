@@ -26,3 +26,9 @@
   max-width: 450px;
   margin: 1rem auto 0;
 }
+
+@media (min-width: 1000px) {
+  .features {
+    max-width: none;
+  }
+}
