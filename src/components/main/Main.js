@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Container from "../UI/Container";
 import Shortener from "./shortener/Shortener";
 import ShortenedLinkList from "./shortener/ShortenedLinkList";
@@ -6,15 +6,16 @@ import Features from "./features/Features";
 import Boost from "./Boost";
 import styles from "./Main.module.css";
 function Main() {
-  const [linkData, setLinkData] = useState([
-    {
-      inputLink: "https://www.frontendmentor.io",
-      shortLink: "https://www.frontendmentor.io",
-    },
-  ]);
+  const [linkData, setLinkData] = useState(() => {
+    const localData = localStorage.getItem("url_data");
+    return localData !== null ? JSON.parse(localData) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem("url_data", JSON.stringify(linkData));
+  }, [linkData]);
 
   const handleLinkData = (data) => {
-    console.log("test");
     setLinkData((prevLinkData) => [...prevLinkData, data]);
   };
 

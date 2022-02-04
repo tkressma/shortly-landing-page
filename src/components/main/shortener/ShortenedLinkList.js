@@ -4,11 +4,11 @@ import ShortenedLink from "./ShortenedLink";
 const ShortenedLinkList = (props) => {
   return (
     <ul className={styles.links}>
-      {props.linkData.map((data) => (
+      {props.linkData.map((data, index) => (
         <ShortenedLink
-          key={data.inputLink}
-          inputLink={data.inputLink}
-          shortLink={data.shortLink}
+          key={index}
+          longURL={data["long_url"]}
+          shortURL={data["short_url"]}
         />
       ))}
     </ul>

@@ -5,7 +5,7 @@ function ShortenedLink(props) {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(props.shortLink);
+    navigator.clipboard.writeText(props.shortURL);
     setCopied(true);
   };
 
@@ -19,20 +19,21 @@ function ShortenedLink(props) {
     <li className={styles.link}>
       <a
         className={styles["link__input_link"]}
-        href={props.inputLink}
+        href={props.longURL}
         target="_blank"
         rel="noreferrer"
       >
-        {props.inputLink}
+        {props.longURL}
       </a>
       <hr />
+
       <a
         className={styles["link__short_link"]}
-        href={props.shortLink}
+        href={props.shortURL}
         target="_blank"
         rel="noreferrer"
       >
-        {props.shortLink}
+        {props.shortURL}
       </a>
       <Button
         text={`${!copied ? "Copy" : "Copied!"}`}
