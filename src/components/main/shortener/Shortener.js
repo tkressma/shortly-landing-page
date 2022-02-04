@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import styles from "./Shortener.module.css";
 import Button from "../../UI/Button";
 import validator from "validator";
+import { isValidDateValue } from "@testing-library/user-event/dist/utils";
 
 function Shortener(props) {
   const [inputLink, setInputLink] = useState("");
+  const [errorMsg, setErrorMsg] = useState("");
+  const [isValid, setIsValid] = useState(true);
 
   const shortenHandler = (event) => {
     event.preventDefault();
@@ -16,6 +19,8 @@ function Shortener(props) {
       };
       props.storeLinkData(linkData);
       setInputLink("");
+    } else {
+      setIsValid(false);
     }
   };
 
@@ -33,6 +38,8 @@ function Shortener(props) {
           placeholder="Shorten a link here..."
           value={inputLink}
           onChange={linkChangeHandler}
+          valid={isValid}
+          errorText={errorMsg}
         />
         <Button type="submit" text="Shorten it!" />
       </form>
