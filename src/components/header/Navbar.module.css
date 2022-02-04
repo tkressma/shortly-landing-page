@@ -11,6 +11,11 @@
   margin-right: auto;
 }
 
+.logo > img {
+  height: 32.67px;
+  width: 120.04px;
+}
+
 @media (min-width: 768px) {
   .navbar {
     justify-content: space-between;

@@ -27,19 +27,21 @@ function ShortenedLink(props) {
       </a>
       <hr />
 
-      <a
-        className={styles["link__short_link"]}
-        href={props.shortURL}
-        target="_blank"
-        rel="noreferrer"
-      >
-        {props.shortURL}
-      </a>
-      <Button
-        text={`${!copied ? "Copy" : "Copied!"}`}
-        onClick={handleCopy}
-        copied={copied}
-      />
+      <div className={styles["link__short_details"]}>
+        <a
+          className={styles["link__short_link"]}
+          href={props.shortURL}
+          target="_blank"
+          rel="noreferrer"
+        >
+          {props.shortURL}
+        </a>
+        <Button
+          text={`${!copied ? "Copy" : "Copied!"}`}
+          onClick={handleCopy}
+          copied={copied}
+        />
+      </div>
     </li>
   );
 }

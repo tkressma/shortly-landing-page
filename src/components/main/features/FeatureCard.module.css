@@ -36,6 +36,11 @@
   align-items: center;
 }
 
+.feature-card figure img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
 @media (min-width: 1000px) {
   .feature-card {
     text-align: left;
