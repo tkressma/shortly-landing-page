@@ -4,7 +4,7 @@
   background: url("../../assets/bg-boost-mobile.svg"), 0 0 #3a3054;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 5.625rem 2.25rem;
+  padding: 5.625rem 0;
   font-size: 1.25rem;
   display: flex;
   flex-direction: column;
