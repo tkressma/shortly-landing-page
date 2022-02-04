@@ -1,5 +1,4 @@
 .shortener {
-  height: 160px;
   width: 100%;
   max-width: 750px;
   margin: -80px auto 0;
@@ -18,7 +17,7 @@
   height: 100%;
 }
 
-.shortener input {
+.shortener__input {
   display: block;
   height: 3rem;
   width: 100%;
@@ -34,6 +33,10 @@
 
 .error {
   outline: 3px solid #f46363;
+  margin-bottom: 0;
+}
+
+.error::placeholder {
   color: #f46363;
 }
 
@@ -43,18 +46,20 @@
   font-weight: 500;
   font-style: italic;
   height: 18px;
-  position: absolute;
-  bottom: 1.625rem;
+  margin: 0.5rem 0 0.75rem;
+  letter-spacing: 0.0818182px;
 }
 
 .shortener button {
   font-size: 1.125rem;
 }
 
+@media (min-width: 768px) {
+}
+
 @media (min-width: 1000px) {
   .shortener {
     background: url("../../../assets/bg-shorten-desktop.svg"), #3a3054;
-    height: 168px;
     padding: 52px 64px;
     margin-top: -84px;
     max-width: none;
@@ -71,6 +76,17 @@
     width: 100%;
     margin-bottom: 0;
     font-size: 1.25rem;
+  }
+
+  .shortener__error {
+    position: absolute;
+    color: #f46363;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: italic;
+    height: 18px;
+    margin: 0;
+    bottom: 1.325rem;
   }
 
   .shortener button {

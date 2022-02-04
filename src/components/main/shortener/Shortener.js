@@ -43,13 +43,13 @@ function Shortener(props) {
           value={inputLink}
           onChange={linkChangeHandler}
         />
+        {!isValid && (
+          <label className={styles["shortener__error"]}>
+            Please add a valid link
+          </label>
+        )}
         <Button type="submit" text="Shorten it!" />
       </form>
-      {!isValid && (
-        <label className={styles["shortener__error"]}>
-          Please add a valid link
-        </label>
-      )}
     </section>
   );
 }
