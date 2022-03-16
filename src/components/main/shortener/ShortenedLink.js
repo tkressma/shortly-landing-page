@@ -36,7 +36,6 @@ function ShortenedLink(props) {
         >
           {props.shortURL}
         </a>
-        <button>Statistics </button>
         <Button
           text={`${!copied ? "Copy" : "Copied!"}`}
           onClick={handleCopy}
