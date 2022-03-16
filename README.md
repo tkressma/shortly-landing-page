@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://shortlyurls.netlify.app/](https://shortlyurls.netlify.app/)
+- Solution URL: [https://shortlyurls.netlify.app/](https://www.frontendmentor.io/solutions/mobilefirst-responsive-landing-page-built-with-react-77_ioOnBi)
 - Live Site URL: [https://shortlyurls.netlify.app/](https://shortlyurls.netlify.app/)
 
 ## My process
