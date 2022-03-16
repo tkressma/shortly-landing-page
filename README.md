@@ -24,12 +24,12 @@ This is a solution to the [Shortly URL shortening API Challenge challenge on Fro
 
 Users should be able to:
 
-- View the optimal layout for the site depending on their device's screen size
-- Shorten any valid URL
-- See a list of their shortened links, even after refreshing the browser
-- Copy the shortened link to their clipboard in a single click
+- View the optimal layout for the site depending on their device's screen size :heavy_check_mark:
+- Shorten any valid URL :heavy_check_mark:
+- See a list of their shortened links, even after refreshing the browser :heavy_check_mark:
+- Copy the shortened link to their clipboard in a single click :heavy_check_mark:
 - Receive an error message when the `form` is submitted if:
-  - The `input` field is empty
+  - The `input` field is empty :heavy_check_mark:
 
 ### Screenshot
 
